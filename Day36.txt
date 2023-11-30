@@ -1,0 +1,60 @@
+// Database: ZenClassProgramme
+
+// Collection: users
+{
+  "_id": ObjectId("..."),
+  "name": "Dinesh",
+  "role": "student",
+  "mentee_of": ObjectId 1("..."),
+  "codekata_solved": 250,
+  "absent_dates": ["2020-10-20", "2020-10-25"],
+  "tasks_not_submitted": ["Task1", "Task2"]
+}
+
+// Collection: codekata
+{
+  "_id": ObjectId("..."),
+  "user_id": ObjectID("..."),
+  "problems_solved": 150,
+  "submission_date": "2020-10-10"
+}
+
+// Collection: attendance
+{
+  "_id": ObjectId("..."),
+  "user_id": ObjectId("..."),
+  "date": "2020-10-15",
+  "status": "absent"
+}
+
+// Collection: topics
+{
+  "_id": ObjectId("..."),
+  "title": "Database Design",
+  "description": "Introduction to database design principles",
+  "date": "2020-10-05"
+}
+
+// Collection: tasks
+{
+  "_id": ObjectId("..."),
+  "user_id": ObjectId("..."),
+  "task_name": "Task1",
+  "submission_status": "pending",
+  "due_date": "2020-10-30"
+}
+
+// Collection: company_drives
+{
+  "_id": ObjectId("..."),
+  "drive_name": "TechCorp Placement Drive",
+  "date": "2020-10-20",
+  "participants": [ObjectId("..."), ObjectId("...")]
+}
+
+// Collection: mentors
+{
+  "_id": ObjectId("..."),
+  "name": "MentorName",
+  "mentees": [ObjectId("..."), ObjectId("..."), ObjectId("...")]
+}
